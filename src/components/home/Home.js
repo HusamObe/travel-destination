@@ -8,7 +8,6 @@ function Home(data) {
     const newArr = data.data.map(element => {
         return { name: element.name, image_url: element.image }
     });
-    console.log(data);
     return (
         <>
             <Header />
