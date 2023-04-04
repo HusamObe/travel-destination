@@ -1,5 +1,7 @@
 import React from "react";
+import { Routes, Route } from 'react-router-dom';
 import Header from "../header/Header";
+import Navbar from "../navbar/Navbar";
 import Tours from "../tours/Tours";
 import Footer from "../footer/Footer";
 
@@ -11,6 +13,7 @@ function Home(data) {
     return (
         <>
             <Header />
+            <Navbar />
             <Tours newArr={newArr} />
             <Footer />
         </>
