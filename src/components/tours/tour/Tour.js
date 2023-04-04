@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import '../tour/Tour.css';
 
-const Tour = () => {
+function Tour({ tour }) {
+    console.log(tour);
     return (
-        <div>
-
+        <div className="ho__tours">
+            <h2 className="ho__heading">{tour.name}</h2>
+            <img className="ho__img" src={tour.image} alt={tour.name} />
         </div>
-    )
+    );
 }
 
-export default Tour
+export default Tour;
