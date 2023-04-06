@@ -1,19 +1,15 @@
 import React from "react";
+import '../tours/Tours.css'
+import Tour from '../tours/tour/Tour'
 
 function Tours(props) {
-    console.log(props);
     return (
-
         <>
-            {props.newArr.map(element => {
-                return <div>
-                    <h2>{element.name}</h2>
-                    <img src={element.image_url} alt={element.name} />
-                </div>
+            {props.newArr.map((element) => {
+                return (
+                    <Tour key={element.id} Tour={element} />
+                );
             })}
-
-
-
         </>
     );
 }

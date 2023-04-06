@@ -1,0 +1,28 @@
+.ho__navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.ho__links {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.ho__links:last-child {
+    margin-right: 0;
+}
+
+.ho__links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.ho__links a:hover {
+    text-decoration: underline;
+}
